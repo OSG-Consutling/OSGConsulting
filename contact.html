@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | OSG Consulting</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #f9f9f9;
+      color: #2b2b2b;
+    }
+    header {
+      background-color: #223A70;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #9b59b6;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #223A70;
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      margin-top: 40px;
+    }
+    form label,
+    form input,
+    form textarea,
+    form button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-family: inherit;
+    }
+    form input,
+    form textarea {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #223A70;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #9b59b6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="Logo.jpg" alt="OSG Consulting Logo" />
+    <img src="Logo.jpg" alt="OSG Consulting Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -29,14 +95,14 @@
     </ul>
 
     <form action="mailto:alla.ovcharenko@osgconsulting.ca" method="post" enctype="text/plain">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Send</button>
     </form>
