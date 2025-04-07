@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | OSG Consulting</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
       font-family: "Georgia", serif;
       background-color: #f9f9f9;
       color: #2b2b2b;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background-color: #223A70;
@@ -20,7 +23,7 @@
       justify-content: space-between;
     }
     header img {
-      height: 40px;
+      height: 50px; /* matched to home page */
     }
     nav a {
       color: white;
@@ -35,13 +38,13 @@
       padding: 40px 20px;
       max-width: 900px;
       margin: 0 auto;
+      flex: 1;
     }
     footer {
       background-color: #223A70;
       color: white;
       text-align: center;
       padding: 10px 20px;
-      margin-top: 40px;
     }
     form label,
     form input,
