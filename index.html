@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OSG Consulting</title>
   <style>
     body {
@@ -10,17 +10,27 @@
       font-family: "Georgia", serif;
       background-color: #f9f9f9;
       color: #2b2b2b;
+      font-size: 18px;
     }
     header {
-      background-color: #223A70; /* Deep Blue */
+      background-color: #223A70;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
     header img {
-      height: 50px;
+      height: 70px;
+      margin-right: 20px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
     }
     nav a {
       color: white;
@@ -29,25 +39,44 @@
       font-weight: bold;
     }
     nav a:hover {
-      color: #9b59b6; /* Plum */
+      color: #9b59b6;
     }
     main {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 900px;
       margin: 0 auto;
+      min-height: 80vh;
     }
     footer {
       background-color: #223A70;
       color: white;
       text-align: center;
       padding: 10px 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    section#about ul {
+      padding-left: 20px;
+    }
+    section#about li {
+      margin-bottom: 8px;
+    }
+    .top-logo {
+      display: flex;
+      justify-content: center;
       margin-top: 40px;
+    }
+    .top-logo img {
+      height: 100px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Logo.jpg" alt="OSG Consulting Logo">
+    <div class="logo-container">
+      <h1>OSG Consulting</h1>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -58,12 +87,32 @@
   </header>
 
   <main>
-    <h1>Welcome to OSG Consulting</h1>
-    <p>We lead business transformation and ERP delivery with purpose, precision, and care. Whether you're upgrading legacy systems or building from the ground up, our team is ready to guide you through every step of the journey.</p>
+    <div class="top-logo">
+      <img src="Logo.jpg" alt="OSG Consulting Logo">
+    </div>
+    <section id="about">
+      <h2>About OSG Consulting</h2>
+      <p>
+        At <strong>OSG Consulting</strong>, we specialize in helping organizations navigate business transformation with confidence. With over 18 years of delivery leadership behind us, our team brings deep expertise in project management, ERP readiness, data migration, stakeholder engagement, and enterprise testing.
+      </p>
+      <p>
+        We’ve led successful transformation programs for clients in health tech, insurance, energy, telecom, and the public sector — including Saskatchewan Blue Cross, Cherry Health, Aucerna/Quorum, TELUS, Shaw, and Videotron.
+      </p>
+      <p>Our approach is grounded in:</p>
+      <ul>
+        <li><strong>Strategic oversight</strong> and hands-on execution</li>
+        <li><strong>Full lifecycle delivery</strong> across cloud platforms and legacy modernization</li>
+        <li><strong>Collaborative project governance</strong> and vendor coordination</li>
+        <li><strong>Agile, hybrid, and waterfall methodologies</strong>, tailored to client needs</li>
+      </ul>
+      <p>
+        We don’t just deliver projects — we build capability, reduce risk, and support meaningful change.
+      </p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 OSG Consulting | <a href="mailto:alla.ovcharenko@osgconsulting.ca" style="color:white;">Contact Us</a>
+    &copy; 2025 OSG Consulting | <a href="mailto:contact@osgconsulting.ca" style="color:white;">Contact Us</a>
   </footer>
 </body>
 </html>
