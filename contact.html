@@ -1,51 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | OSG Consulting</title>
+  <link rel="icon" type="image/png" href="LogoIcon.png" />
   <style>
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: "Georgia", serif;
-      background-color: #f9f9f9;
+      background-color: #001c3d;
       color: #2b2b2b;
+      font-size: 18px;
       display: flex;
       flex-direction: column;
     }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
     header {
       background-color: #223A70;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
-    header img {
-      height: 50px; /* matched to home page */
+
+    .logo-container img {
+      height: 70px;
+      margin-right: 15px;
     }
+
+    .logo-container h1 {
+      font-size: 26px;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     nav a {
       color: white;
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       color: #9b59b6;
     }
+
     main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-      flex: 1;
+      padding: 60px 40px;
+      flex-grow: 1;
     }
+
     footer {
       background-color: #223A70;
       color: white;
       text-align: center;
       padding: 10px 20px;
     }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
     form label,
     form input,
     form textarea,
@@ -55,6 +103,7 @@
       margin-top: 10px;
       font-family: inherit;
     }
+
     form input,
     form textarea {
       padding: 8px;
@@ -62,6 +111,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     form button {
       background-color: #223A70;
       color: white;
@@ -69,50 +119,59 @@
       padding: 10px;
       margin-top: 20px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+
     form button:hover {
       background-color: #9b59b6;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="Logo.jpg" alt="OSG Consulting Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="page-wrapper">
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <img src="Logo.jpg" alt="OSG Consulting Logo">
+          <h1>OSG Consulting</h1>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <p>Have a question or want to discuss how OSG Consulting can support your transformation initiative? Reach out!</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:alla.ovcharenko@osgconsulting.ca">alla.ovcharenko@osgconsulting.ca</a></li>
-      <li><strong>Phone:</strong> (403) 875-7085</li>
-      <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alla-ovcharenko-7a5a5729/" target="_blank">Alla Ovcharenko</a></li>
-    </ul>
+      <main>
+        <h1>Contact Us</h1>
+        <p>Have a question or want to discuss how OSG Consulting can support your transformation initiative? Reach out!</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:alla.ovcharenko@osgconsulting.ca">alla.ovcharenko@osgconsulting.ca</a></li>
+          <li><strong>Phone:</strong> (403) 875-7085</li>
+          <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alla-ovcharenko-7a5a5729/" target="_blank">Alla Ovcharenko</a></li>
+        </ul>
 
-    <form action="mailto:alla.ovcharenko@osgconsulting.ca" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+        <form action="mailto:alla.ovcharenko@osgconsulting.ca" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-  </main>
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
 
-  <footer>
-    &copy; 2025 OSG Consulting | <a href="mailto:alla.ovcharenko@osgconsulting.ca" style="color:white;">Contact Us</a>
-  </footer>
+    <footer>
+      &copy; 2025 OSG Consulting | <a href="mailto:alla.ovcharenko@osgconsulting.ca" style="color:white; text-decoration: none;">Contact Us</a>
+    </footer>
+  </div>
 </body>
 </html>
