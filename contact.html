@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Us | OSG Consulting</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | OSG Consulting</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <p>We’d love to hear from you. Reach out for project inquiries, collaboration opportunities, or just to connect.</p>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:alla.ovcharenko@osgconsulting.ca">alla.ovcharenko@osgconsulting.ca</a></li>
-    <li><strong>Phone:</strong> (403) 875-7085</li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alla-ovcharenko-7a5a5729/" target="_blank">Alla Ovcharenko</a></li>
-  </ul>
+  <header>
+    <img src="Logo.jpg" alt="OSG Consulting Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
+  <main>
+    <h1>Contact Us</h1>
+    <p>Have a question or want to discuss how OSG Consulting can support your transformation initiative? Reach out!</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:alla.ovcharenko@osgconsulting.ca">alla.ovcharenko@osgconsulting.ca</a></li>
+      <li><strong>Phone:</strong> (403) 875-7085</li>
+      <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alla-ovcharenko-7a5a5729/" target="_blank">Alla Ovcharenko</a></li>
+    </ul>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
+    <form action="mailto:alla.ovcharenko@osgconsulting.ca" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message"></textarea><br>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
-    <button type="submit">Send</button>
-  </form>
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 OSG Consulting | <a href="mailto:alla.ovcharenko@osgconsulting.ca" style="color:white;">Contact Us</a>
+  </footer>
 </body>
 </html>
