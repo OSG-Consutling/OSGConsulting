@@ -1,0 +1,16 @@
+GitHub
+OSG-Consulting
+GitHubOSG25!
+
+
+Open bash
+
+cd "C:/Users/Alla/Desktop/Job Search/Website/OSGConsulting-site"
+
+git init
+
+git remote -v
+
+git add .
+git commit -m "Add final site pages with full layout"
+git push
