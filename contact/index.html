@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team | OSG Consulting</title>
+  <title>Contact | OSG Consulting</title>
   <link rel="icon" type="image/png" href="LogoIcon.png" />
   <style>
     html, body {
@@ -88,6 +88,43 @@
       text-align: center;
       padding: 10px 20px;
     }
+
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+
+    form label,
+    form input,
+    form textarea,
+    form button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-family: inherit;
+    }
+
+    form input,
+    form textarea {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      background-color: #223A70;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #9b59b6;
+    }
   </style>
 </head>
 <body>
@@ -98,39 +135,41 @@
           <img src="Logo.jpg" alt="OSG Consulting Logo">
           <h1>OSG Consulting</h1>
         </div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+<nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/team">Team</a>
+  <a href="/contact">Contact</a>
+</nav>
       </header>
 
       <main>
-        <h1>Meet the Team</h1>
+        <h1>Contact Us</h1>
+        <p>Have a question or want to discuss how OSG Consulting can support your transformation initiative? Reach out!</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:alla.ovcharenko@osgconsulting.ca">alla.ovcharenko@osgconsulting.ca</a></li>
+          <li><strong>Phone:</strong> (403) 875-7085</li>
+          <li><strong>Location:</strong> Calgary, Alberta, Canada</li>
+                  </ul>
 
-        <p>
-          OSG Consulting is a team of senior professionals with deep experience in business transformation, ERP implementation, and enterprise delivery. We bring clarity, structure, and hands-on leadership to every engagement — helping clients move from complexity to confidence.
-        </p>
+        <form action="mailto:alla.ovcharenko@osgconsulting.ca" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <h2>Senior-Led from Day One</h2>
-        <p>
-          Our consultants have delivered transformation programs across sectors including health tech, insurance, telecom, and government. With strong backgrounds in project management, business analysis, change enablement, quality assurance, and data migration, we ensure every project is guided by practical insight and proven expertise.
-        </p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <h2>A Curated Network of Experts</h2>
-        <p>
-          OSG draws on a trusted network of independent specialists, tailored to fit each project's unique scope. Whether it’s ERP readiness, vendor coordination, or business process redesign, our flexible model means clients get senior-level support — without added complexity or overhead.
-        </p>
-        <p>
-          The result? A high-performing team that adapts to your needs and delivers real results.
-        </p>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
       </main>
     </div>
 
     <footer>
-      &copy; 2023 OSG Consulting | <a href="mailto:contact@osgconsulting.ca" style="color:white; text-decoration: none;">Contact Us</a>
+      &copy; 2023 OSG Consulting | <a href="mailto:alla.ovcharenko@osgconsulting.ca" style="color:white; text-decoration: none;">Contact Us</a>
     </footer>
   </div>
 </body>
